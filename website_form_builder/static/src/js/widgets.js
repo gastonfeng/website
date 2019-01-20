@@ -102,7 +102,7 @@
             this.blacklist = blacklist;
             var _options = $.extend({}, {
                 title: _t("Add Model Fields"),
-                size: "small",
+                size: "large",
             }, options);
             return this._super(parent, _options);
         },
