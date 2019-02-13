@@ -25,11 +25,11 @@ class website(orm.Model):
     _inherit = 'website'
 
     def sale_get_order(
-        self, cr, uid, ids, force_create=False, code=None,
+        self,  ids, force_create=False, code=None,
         update_pricelist=None, context=None
     ):
         order = super(website, self).sale_get_order(
-            cr, uid, ids, force_create=force_create, code=code,
+             ids, force_create=force_create, code=code,
             update_pricelist=update_pricelist, context=context)
         if order:
             company = order.get_products_company()

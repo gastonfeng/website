@@ -29,18 +29,18 @@ class website_sale_unsaleable_options(website_sale_options):
 
     @http.route()
     def modal(self, product_id, **kw):
-        cr, uid, context, pool = (
+         context, pool = (
             request.cr, request.uid, request.context, request.registry)
         website_context = kw.get('kwargs', {}).get('context', {})
         context = dict(context or {}, **website_context)
         request.website = request.website.with_context(context)
         template = pool['product.template']
         prod_ids = template.search(
-            cr, uid, [('optional_product_ids', 'in', [product_id])],
+             [('optional_product_ids', 'in', [product_id])],
             context=context)
         if prod_ids:
             products = template.browse(
-                cr, uid, prod_ids, context)
+                 prod_ids, context)
             prod_list = [p.name for p in products]
             message = _("You can't direcly add to cart an optional "
                         "product. You should first add one of the "
