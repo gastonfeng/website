@@ -2,6 +2,7 @@
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
 from lxml import html
+
 from odoo.tests.common import PORT, HttpCase
 
 

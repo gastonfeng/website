@@ -2,10 +2,11 @@
 # Copyright 2016 Jairo Llopis <jairo.llopis@tecnativa.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo.tests.common import HttpCase
-from odoo.modules.module import get_resource_path
-from odoo import tools
 from lxml.html import document_fromstring
+
+from odoo import tools
+from odoo.modules.module import get_resource_path
+from odoo.tests.common import HttpCase
 
 
 def load_xml(cr, module, filepath, kind='demo'):

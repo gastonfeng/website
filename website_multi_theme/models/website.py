@@ -8,7 +8,6 @@ import logging
 from odoo import api, models, fields
 from odoo.tools import config
 
-
 MODULE = "website_multi_theme"
 LAYOUT_KEY = MODULE + ".auto_layout_website_%d"
 ASSETS_KEY = MODULE + ".auto_assets_website_%d"

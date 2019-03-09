@@ -1,9 +1,10 @@
 # Copyright 2018 Simone Orsi <simone.orsi@camptocamp.com>
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-from odoo.tests.common import SavepointCase
-from odoo import exceptions
 from werkzeug.wrappers import Request
+
+from odoo import exceptions
+from odoo.tests.common import SavepointCase
 
 
 class FakeRequest(object):

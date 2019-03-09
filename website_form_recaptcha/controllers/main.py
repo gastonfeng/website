@@ -2,12 +2,12 @@
 # Copyright 2019 Simone Orsi - Camptocamp SA
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
-from odoo import http
-from odoo.http import request
+import json
 
 from odoo.addons.website_form.controllers.main import WebsiteForm
 
-import json
+from odoo import http
+from odoo.http import request
 
 
 class WebsiteForm(WebsiteForm):

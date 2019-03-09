@@ -2,9 +2,10 @@
 # Copyright 2019 Simone Orsi - Camptocamp SA
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
+import requests
+
 from odoo import models, api, http, _
 from odoo.exceptions import ValidationError
-import requests
 
 
 class WebsiteFormRecaptcha(models.AbstractModel):

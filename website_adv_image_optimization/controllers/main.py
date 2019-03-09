@@ -1,13 +1,14 @@
 # Copyright 2018 Onestein
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
-import io
 import base64
+import io
 import json
+
+from PIL import Image
 
 from odoo import http
 from odoo.http import request
-from PIL import Image
 
 
 class MainController(http.Controller):

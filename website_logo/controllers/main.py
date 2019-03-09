@@ -1,7 +1,7 @@
-import functools
-import logging
-import io
 import base64
+import functools
+import io
+import logging
 
 from odoo import _, http, SUPERUSER_ID
 from odoo.http import request

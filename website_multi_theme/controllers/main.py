@@ -1,8 +1,9 @@
 # Copyright 2018 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
 # License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
 
-from odoo.http import request, route
 from odoo.addons.website.controllers.main import Website
+
+from odoo.http import request, route
 
 
 class WebsiteMultiTheme(Website):

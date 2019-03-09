@@ -2,9 +2,10 @@
 # Copyright initOS GmbH 2016
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
+from urllib.parse import urlparse, urljoin
+
 from odoo import models, api, fields, exceptions, _
 from odoo.http import request
-from urllib.parse import urlparse, urljoin
 
 
 class Website(models.Model):

@@ -2,10 +2,12 @@
 # Copyright 2017 Tecnativa - David Vidal
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
+import base64
+
+import mock
+
 from odoo.tests import HttpCase
 from ..controllers.main import Website
-import mock
-import base64
 
 imp_cont = 'odoo.addons.website_logo.controllers.main'
 imp_req = '%s.request' % imp_cont
