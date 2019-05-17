@@ -2,10 +2,8 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from mock import patch
-from odoo.addons.website_adv_image_optimization.controllers.main \
-    import MainController
-
 from odoo.tests.common import TransactionCase
+from ..controllers.main import MainController
 
 
 class TestController(TransactionCase):
